@@ -20,6 +20,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+var weather = "Sunny";
+console.log(weather);
+
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -33,6 +36,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+var firstName = "Griffin ";
+var lastName= "McKesson";
+console.log(firstName + lastName);
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -47,7 +53,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+var price= 9.98;
+var quantity= 5;
+var total= (price * quantity);
+console.log (Math.round(total).toFixed(2));
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
  *
@@ -63,6 +72,15 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+var weather= "Rainy";
+var message= "";
+
+if( weather === "Sunny") {
+message= "Yay it's sunny outside!";
+
+}
+else {message= "Aww! It's not sunny outside!"};
+console.log(message);
 
 /* Challenge #5
  * Create a function that returns any string
@@ -76,6 +94,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function myFunction (parameter) {
+    return parameter;
+}
+console.log(myFunction("stuff"));
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -89,6 +111,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+myArrowFunction = (arrow) => {
+    return (arrow);
+}
+console.log(myArrowFunction
+    ("Roy Harper is the arrow, I'm calling this his function"));
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
@@ -103,6 +130,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function stringToUpper(str) {
+    console.log(str.toUpperCase());
+}
+stringToUpper("it's loud in here");
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -110,13 +141,27 @@ console.log('hello world')
  * Steps:
  * 1. Create a function called `multiplyByTwo`
  * 2. Add a parameter called `number` in your function signature
- * 3. Add a return statement in your function which returns `number` times two
- * 4. Create a variable called `num1` and assign it to the result of `multiplyByTwo(1)`
- * 5. Create a variable called `num2` and assign it to the result of `multiplyByTwo(5)`
- * 6. Create a variable called `num3` and assign it to the result of `multiplyByTwo(10)`
+ * 3. Add a return statement in your function which returns `number` 
+ * times two
+ * 4. Create a variable called `num1` and assign it to the result of
+ *  `multiplyByTwo(1)`
+ * 5. Create a variable called `num2` and assign it to the result of
+ *  `multiplyByTwo(5)`
+ * 6. Create a variable called `num3` and assign it to the result of
+ *  `multiplyByTwo(10)`
  * 7. Use `console.log` to print out the value of `num1`, `num2`, and `num3`
  *
  * Example Output: 2, 10, 20
  */
 
 // TODO: ADD CODE HERE
+function multiplyByTwo(number) {
+    return(number*2);
+}
+var num1=(multiplyByTwo(1));
+var num2=(multiplyByTwo(5));
+var num3=(multiplyByTwo(10));
+console.log(`${num1}, ${num2}, ${num3}`);
+
+
+
